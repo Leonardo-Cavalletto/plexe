@@ -1,3 +1,8 @@
+.gitignore
+bin/generic-parser.py
+bin/genmakefile.py
+**/.Rhistory
+
 src/Makefile
 src/scripts/__pycache__/
 src/*.so
