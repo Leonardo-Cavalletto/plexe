@@ -1,0 +1,37 @@
+<!-- Generated with ringGen.py -e 100 -l 3 -s 100 -d 4000 -->
+
+<!--
+// Copyright (C) 2019-2021 Michele Segata <segata@ccs-labs.org>
+//
+// Documentation for these modules is at http://veins.car2x.org/
+//
+// SPDX-License-Identifier: (GPL-2.0-or-later OR CC-BY-SA-4.0)
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+// -
+//
+// At your option, you can also redistribute and/or modify this file
+// under a
+// Creative Commons Attribution-ShareAlike 4.0 International License.
+//
+// You should have received a copy of the license along with this
+// work.  If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+-->
+
+<edges>
+    <edge id="edg1" from="node1" to="node2" numLanes="3" speed="100.000000" length="2000.000000" shape="19.99,636.10 39.98,635.47 79.80,631.70 119.31,625.45 158.35,616.72 196.76,605.56 234.39,592.01 271.10,576.13 306.74,557.97 341.17,537.60 374.26,515.12 405.86,490.60 435.87,464.15 464.15,435.87 490.60,405.86 515.12,374.26 537.60,341.17 557.97,306.74 576.13,271.10 592.01,234.39 605.56,196.76 616.72,158.35 625.45,119.31 631.70,79.80 635.47,39.98 636.72,0.00 635.47,-39.98 631.70,-79.80 625.45,-119.31 616.72,-158.35 605.56,-196.76 592.01,-234.39 576.13,-271.10 557.97,-306.74 537.60,-341.17 515.12,-374.26 490.60,-405.86 464.15,-435.87 435.87,-464.15 405.86,-490.60 374.26,-515.12 341.17,-537.60 306.74,-557.97 271.10,-576.13 234.39,-592.01 196.76,-605.56 158.35,-616.72 119.31,-625.45 79.80,-631.70 39.98,-635.47 0.00,-636.72 -19.99,-636.10"/>
+    <edge id="edg2" from="node2" to="node1" numLanes="3" speed="100.000000" length="2000.000000" shape="-19.99,-636.10 -39.98,-635.47 -79.80,-631.70 -119.31,-625.45 -158.35,-616.72 -196.76,-605.56 -234.39,-592.01 -271.10,-576.13 -306.74,-557.97 -341.17,-537.60 -374.26,-515.12 -405.86,-490.60 -435.87,-464.15 -464.15,-435.87 -490.60,-405.86 -515.12,-374.26 -537.60,-341.17 -557.97,-306.74 -576.13,-271.10 -592.01,-234.39 -605.56,-196.76 -616.72,-158.35 -625.45,-119.31 -631.70,-79.80 -635.47,-39.98 -636.72,0.00 -635.47,39.98 -631.70,79.80 -625.45,119.31 -616.72,158.35 -605.56,196.76 -592.01,234.39 -576.13,271.10 -557.97,306.74 -537.60,341.17 -515.12,374.26 -490.60,405.86 -464.15,435.87 -435.87,464.15 -405.86,490.60 -374.26,515.12 -341.17,537.60 -306.74,557.97 -271.10,576.13 -234.39,592.01 -196.76,605.56 -158.35,616.72 -119.31,625.45 -79.80,631.70 -39.98,635.47 0.00,636.72 19.99,636.10"/>
+</edges>
