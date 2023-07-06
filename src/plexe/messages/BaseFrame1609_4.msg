@@ -1,6 +1,7 @@
 //
-// Copyright (C) 2008 Christoph Sommer <christoph.sommer@informatik.uni-erlangen.de>
-// Copyright (C) 2012-2023 Michele Segata <segata@ccs-labs.org>
+// Copyright (C) 2011 David Eckhoff <eckhoff@cs.fau.de>
+//
+// Documentation for these modules is at http://veins.car2x.org/
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 //
@@ -19,13 +20,17 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 
-import org.car2x.plexe.PlexeScenario;
+import veins.base.utils.SimpleAddress;
 
-network Highway extends PlexeScenario
-{
+namespace veins;
 
-    submodules:
-        human[0]: HumanCar {
-        }
-
+packet BaseFrame1609_4 {
+    //Channel Number on which this packet was sent
+    int channelNumber;
+    //User priority with which this packet was sent (note the AC mapping rules in Mac1609_4::mapUserPriority)
+    int userPriority = 7;
+    //Unique number to identify the service
+    int psid = 0;
+    //Recipient of frame (-1 for any)
+    LAddress::L2Type recipientAddress = -1;
 }

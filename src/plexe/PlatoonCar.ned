@@ -28,7 +28,7 @@ import org.car2x.veins.modules.nic.Nic80211p;
 import org.car2x.plexe.utilities.BasePositionHelper;
 import org.car2x.plexe.scenarios.BaseScenario;
 import org.car2x.plexe.protocols.BaseProtocol;
-import org.car2x.plexe.apps.BaseApp;
+import org.car2x.plexe.apps.DemoBaseApplLayer;
 import org.car2x.plexe.driver.Veins11pRadioDriver;
 
 module PlatoonCar
@@ -39,31 +39,32 @@ module PlatoonCar
         string appl_type;
         string protocol_type;
 
+        @display("bgb=373,514");
     submodules:
 
         helper: <helper_type> like BasePositionHelper {
             parameters:
-                @display("p=90,100");
+                @display("p=147,100");
         }
 
         scenario: <scenario_type> like BaseScenario {
             parameters:
-                @display("p=90,100");
+                @display("p=212,111");
         }
 
-        appl: <appl_type> like BaseApp {
+        appl: <appl_type> like DemoBaseApplLayer {
             parameters:
                 @display("p=60,100");
         }
 
         prot: <protocol_type> like BaseProtocol {
             parameters:
-                @display("p=60,200");
+                @display("p=15,255");
         }
 
         veins11pDriver: Veins11pRadioDriver {
             parameters:
-                @display("p=60,200");
+                @display("p=89,171");
         }
 
         nic: Nic80211p {
@@ -73,7 +74,7 @@ module PlatoonCar
 
         mobility: TraCIMobility {
             parameters:
-                @display("p=130,172;i=block/cogwheel");
+                @display("p=287,200;i=block/cogwheel");
         }
     connections allowunconnected:
         nic.upperLayerIn <-- veins11pDriver.lowerLayerOut;

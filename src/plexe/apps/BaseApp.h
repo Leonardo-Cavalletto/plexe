@@ -21,7 +21,7 @@
 #ifndef BASEAPP_H_
 #define BASEAPP_H_
 
-#include "veins/base/modules/BaseApplLayer.h"
+#include "veins/modules/application/ieee80211p/DemoBaseApplLayer.h"
 #include "veins/modules/mobility/traci/TraCIMobility.h"
 
 #include "plexe/CC_Const.h"

@@ -1,6 +1,7 @@
 //
-// Copyright (C) 2008 Christoph Sommer <christoph.sommer@informatik.uni-erlangen.de>
-// Copyright (C) 2012-2023 Michele Segata <segata@ccs-labs.org>
+// Copyright (C) 2021 Christoph Sommer <sommer@cms-labs.org>
+//
+// Documentation for these modules is at http://veins.car2x.org/
 //
 // SPDX-License-Identifier: GPL-2.0-or-later
 //
@@ -19,13 +20,18 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 
-import org.car2x.plexe.PlexeScenario;
+import veins.common;
 
-network Highway extends PlexeScenario
+cplusplus {{
+#include "veins/base/utils/Coord.h"
+}}
+
+namespace veins;
+
+class Coord
 {
-
-    submodules:
-        human[0]: HumanCar {
-        }
-
+    @existingClass;
+    @opaque;
 }
+
+

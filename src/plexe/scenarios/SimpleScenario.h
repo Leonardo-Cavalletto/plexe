@@ -22,7 +22,7 @@
 #define SIMPLESCENARIO_H_
 
 #include "plexe/scenarios/BaseScenario.h"
-#include "plexe/apps/BaseApp.h"
+#include "plexe/apps/DemoBaseApplLayer.h"
 
 namespace plexe {
 
@@ -34,7 +34,7 @@ protected:
     // leader average speed
     double leaderSpeed;
     // application layer, used to stop the simulation
-    BaseApp* appl;
+    DemoBaseApplLayer* appl;
 
 public:
     SimpleScenario()
